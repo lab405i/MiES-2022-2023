@@ -1,0 +1,5 @@
+ORG	0800h	; 
+	LXI	H,08F0h	; 
+	MOV	M,A; 
+	ANA	B; 
+	END
