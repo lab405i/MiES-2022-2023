@@ -1,0 +1,11 @@
+ORG  0090H  
+TIMER:  CLR  A  
+  MOV  TH1,#69H  
+  MOV  TL1,#69H  
+  MOV  TMOD,#00100000b  
+  SETB  P2.3  
+  SETB  TR1  
+  CLR  TF1  
+$K1:  JNB  TF1,$K1  
+  CLR  P2.3  
+  END
